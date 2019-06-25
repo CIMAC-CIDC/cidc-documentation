@@ -17,25 +17,38 @@ $ gcloud auth application-default login
 
 To upload the WES data, create a directory with a metadata file and the fastq files. 
 
-The metadata file is a csv file and requires the following columns:
+The metadata file is an Excel file and requires the following columns:
+### Header columns:
+|COLUMN NAME|DESCRIPTION|
+|-----------|-----------|
+|**LEAD ORGANIZATION STUDY ID**| Trial identifier used by lead organization|
+|**ASSAY CREATOR**| Indicates what site is filling out the assay"|
+|**ASSAY CATEGORY**| Type of the assay e.g. WES|
+|**ENRICHMENT KIT**| Vendor for the kit used for enrichment, e.g. Twist, Agilent, IDT|
+|**LIBRARY KIT VENDOR**| Vendor for the library construction kit, e.g. KAPA|
+|**SEQUENCER PLATFORM**| Sequencer Model, e.g. HiSeq 2500, NextSeq, NovaSeq|
+|**PAIRED END READS**| Indicate if the sequencing was performed paired or single ended|
+|**READ LENGTH**| Number of cycles for each sequencing read| 
+
+### Data columns:
 
 |COLUMN NAME|DESCRIPTION|
 |-----------|-----------|
-|**SAMPLE_ID**| Unique identifier for the sample|
-|**PATIENT_ID**| Unique identifier for the patient|
-|**TRIAL_ID**| Trial identifier (Example: DFCI_9999)|
-|**TIMEPOINT**| Time associated with the sample acquisition|
-|**TIMEPOINT_UNIT**| Unit associated with the timepoint data|
-|**FASTQ_NORMAL_1**| Filename for fastq pair 1 from normal|
-|**FASTQ_NORMAL_2**| Filename for fastq pair 2 from normal|
-|**FASTQ_TUMOR_1**| Filename for fastq pair 1 from tumor| 
-|**FASTQ_TUMOR_2**| Filename for fastq pair 2 from tumor|
-|**BATCH_ID**| Sequencing batch identifier for the sample|
-|**INSTRUMENT_MODEL**| Sequencing platform used for the assay|
-|**READ_LENGTH**| Length of sequencing reads|
-|**INSERT_SIZE**|Insert size of the library used for paired end sequencing|
+|**CIMAC PARTICIPANT ID**| Participant identifier assigned by the CIMAC-CIDC Network|
+|**CIMAC ALIQUOT ID**| Aliquot identifier assigned by the CIMAC-CIDC Network|
+|**GENOMIC SOURCE**| Sequencing platform used for the assay|
+|**LIBRARY KIL LOT**| Lot number for the library construction kit|
+|**ENRICHMENT LOT**| Lot number for the enrichment kit|
+|**LIBRARY PREP DATE**| Sequencing platform used for the assay|
+|**CAPTURE DATE**| Date of the hybrid capture enrichment|
+|**DNA INUPUT NG**| Amount of DNA/RNA (in ng) used for library construction|
+|**LIBRARY YIELD NG**| Resulting yield (in ng) from library construction|
+|**AVERAGE INSERT SIZE**|The average insert size for the library|
+|**FORWARD FASTQ**| Fastq file for the forward reads|
+|**REVERSE FASTQ**| Fastq file for the reverse reads|
+|**READ GROUP MAPPING FILE**|Stores read group information for each read in the fastq files|
 
-Click [here](https://drive.google.com/file/d/14glz91rupqLTMbGK3A9OWx5Gv_b45wNe/view?usp=sharing) to see an example of a metadata file.
+Click [here](https://github.com/CIMAC-CIDC/cidc-schemas/blob/master/template_examples/wes_template.xlsx) to see an example of a metadata file. 
 
 ## Uploading Files
 
