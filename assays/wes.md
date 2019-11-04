@@ -35,7 +35,7 @@ Click [here](https://github.com/CIMAC-CIDC/cidc-schemas/blob/master/template_exa
 
 ## Uploading Files
 
-**Start the CLI and use your JSON Web Token (displayed below) to log in**
+**Start the CLI and use your Identity Token (displayed below) to log in**
 ```bash
 cidc login [token]
 ```
