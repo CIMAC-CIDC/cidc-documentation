@@ -16,7 +16,6 @@ Example directory for IHC data transfer (all files should be in the same directo
 .
 ├── ihc_assay_CT.xlsx
 ├── ihc_image.tiff
-├── he_image.tiff
 └── ihc_metadata_11012019.xlsx
 ```
 
