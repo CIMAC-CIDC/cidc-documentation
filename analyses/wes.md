@@ -38,4 +38,4 @@ cidc config set-env staging
 ```bash
 cidc analyses upload --analysis wes_analysis --xlsx wes_analysis_010720.xlsx
 ```
-The process will then use the template to upload the analysis files. The files can be viewed on the portal [here](https://stagingportal.cimac-network.org/browse-files) once the upload is complete.
+The process will then use the template to upload the analysis files. The files can be viewed on the portal [here](https://portal.cimac-network.org/browse-files?facets=Assay%20Type%7CWES%7CAssay%20Metadata&facets=Assay%20Type%7CWES%7CSource&facets=Assay%20Type%7CWES%7CGermline&facets=Assay%20Type%7CWES%7CPurity&facets=Assay%20Type%7CWES%7CClonality&facets=Assay%20Type%7CWES%7CCopy%20Number&facets=Assay%20Type%7CWES%7CNeoantigen&facets=Assay%20Type%7CWES%7CSomatic&facets=Assay%20Type%7CWES%7CAlignment&facets=Assay%20Type%7CWES%7CMetrics&facets=Assay%20Type%7CWES%7CHLA%20Type&facets=Assay%20Type%7CWES%7CReport) once the upload is complete.
